@@ -122,6 +122,18 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\DemoDataBase.cs">
+      <BoundTo>28cfab36-6a50-4fea-90e3-a2f29be33e6b</BoundTo>
+      <DependentUpon>DemoDataBase.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>afda5959-438c-4c43-bc9a-6bf35f1841e4</id>
+    </Compile>
+    <Compile Include="Acciones\DemoDataBase.UserCode.cs">
+      <BoundTo>28cfab36-6a50-4fea-90e3-a2f29be33e6b</BoundTo>
+      <DependentUpon>DemoDataBase.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>995a1db2-d0e6-42d8-8281-c3ba1c6f661c</id>
+    </Compile>
     <Compile Include="Acciones\DemoIntro.cs">
       <DependentUpon>DemoIntro.rxrec</DependentUpon>
       <RecorderCode>true</RecorderCode>
@@ -172,6 +184,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Acciones\DemoDataBase.rxrec">
+      <BoundTo>4b7dfeec-2daf-4648-b335-c93c2c4ab970</BoundTo>
+      <id>28cfab36-6a50-4fea-90e3-a2f29be33e6b</id>
+      <recordtableid>332bf891-ab08-446d-82d5-ddcfb46b5e88</recordtableid>
+    </None>
     <None Include="Acciones\DemoIntro.rxrec">
       <BoundTo>4b7dfeec-2daf-4648-b335-c93c2c4ab970</BoundTo>
       <id>2a1b0afb-efdc-4b35-a9f1-3c3c4afad08c</id>

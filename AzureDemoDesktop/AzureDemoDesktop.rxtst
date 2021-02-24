@@ -2,6 +2,10 @@
 <testsuitedoc>
 	<testsuiteentryhierarchy>
 		<flatlistofchildren>
+			<setup
+			id="1aaae0bc-4e73-419f-aac6-70ed9263afde"
+			name="setup">
+			</setup>
 			<testmodule
 			id="4a123132-61db-4f90-ad7d-11c30966e5b1"
 			name="CloseAUT"
@@ -21,6 +25,20 @@
 			name="DemoIntro"
 			ref="cba4e9f3-e83d-4cc6-bb1a-473d563710b9"
 			type="Recording">
+			</testmodule>
+			<testmodule
+			id="70aa6bfc-0d37-44f1-8f1d-beba75e29f49"
+			name="StartAUT"
+			ref="fb051de7-b988-4f67-afa1-a83de24e0253"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="eb180af8-4ffd-4947-a6f4-eaacf6ba70fd"
+					variableid="ce04f0a1-d62d-4e19-9be5-44aa79241f86"
+					variablename="StartAutProcessIDVar">
+					</var>
+				</databinding>
 			</testmodule>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
@@ -43,7 +61,7 @@
 			</testsuite>
 			<testcase
 			id="78daa0e0-c802-4923-b532-569e186fede9"
-			name="TestCase">
+			name="TestCase_01">
 			</testcase>
 			<teardown
 			id="7b3c6de1-726c-4d3e-bc77-50560351bf3a"
@@ -63,6 +81,20 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<teardown
+			id="b93566d8-ed77-47d6-b702-de2c7588bd72"
+			name="teardown">
+			</teardown>
+			<testmodule
+			id="cbe5ee9d-c222-497d-a541-a17c8e5ce565"
+			name="DemoDataBase"
+			ref="332bf891-ab08-446d-82d5-ddcfb46b5e88"
+			type="Recording">
+			</testmodule>
+			<testcase
+			id="d376d3fe-2499-4a3d-a40b-d9bff8ffca6e"
+			name="TestCase_02">
+			</testcase>
 			<testcase
 			id="eb180af8-4ffd-4947-a6f4-eaacf6ba70fd"
 			name="AzureDemoDesktop"
@@ -74,6 +106,20 @@
 					</param>
 				</parameters>
 			</testcase>
+			<testmodule
+			id="ee98a212-13f9-4558-94ae-af80893295c2"
+			name="CloseAUT"
+			ref="b9c6996d-03b9-4c25-9409-6bc5175e8068"
+			type="Recording">
+				<databinding>
+					<var
+					dataname="AppProcessID"
+					datasourceid="eb180af8-4ffd-4947-a6f4-eaacf6ba70fd"
+					variableid="d3763132-2eaf-41e8-864b-6c512195a517"
+					variablename="CloseAutProcessIDVar">
+					</var>
+				</databinding>
+			</testmodule>
 			<setup
 			id="fd599dfe-c275-4106-9cc6-9aa9a8d2723e"
 			name="setup">
@@ -88,7 +134,7 @@
 				name="AzureDemoDesktop">
 					<testcase
 					id="78daa0e0-c802-4923-b532-569e186fede9"
-					name="TestCase">
+					name="TestCase_01">
 						<setup
 						id="fd599dfe-c275-4106-9cc6-9aa9a8d2723e"
 						name="setup">
@@ -110,6 +156,30 @@
 							</testmodule>
 						</teardown>
 					</testcase>
+					<testcase
+					id="d376d3fe-2499-4a3d-a40b-d9bff8ffca6e"
+					name="TestCase_02">
+						<setup
+						id="1aaae0bc-4e73-419f-aac6-70ed9263afde"
+						name="setup">
+							<testmodule
+							id="70aa6bfc-0d37-44f1-8f1d-beba75e29f49"
+							name="StartAUT">
+							</testmodule>
+						</setup>
+						<testmodule
+						id="cbe5ee9d-c222-497d-a541-a17c8e5ce565"
+						name="DemoDataBase">
+						</testmodule>
+						<teardown
+						id="b93566d8-ed77-47d6-b702-de2c7588bd72"
+						name="teardown">
+							<testmodule
+							id="ee98a212-13f9-4558-94ae-af80893295c2"
+							name="CloseAUT">
+							</testmodule>
+						</teardown>
+					</testcase>
 				</testcase>
 			</testsuite>
 		</childhierarchy>
@@ -122,6 +192,9 @@
 		name="TestRun">
 			<testcontainer
 			id="78daa0e0-c802-4923-b532-569e186fede9">
+			</testcontainer>
+			<testcontainer
+			id="d376d3fe-2499-4a3d-a40b-d9bff8ffca6e">
 			</testcontainer>
 			<testcontainer
 			id="eb180af8-4ffd-4947-a6f4-eaacf6ba70fd">
