@@ -92,8 +92,8 @@ namespace AzureDemoDesktop.Generales
 
             Init();
 
-            Report.Log(ReportLevel.Info, "Application", "Run application 'C:\\Users\\No Name\\Desktop\\RxDemoApp.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
-            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("C:\\Users\\No Name\\Desktop\\RxDemoApp.exe", "", "", false));
+            Report.Log(ReportLevel.Info, "Application", "Run application '%UserProfile%\\Desktop\\RxDemoApp.exe' in normal mode. Return value bound to $StartAutProcessIDVar.", new RecordItemIndex(0));
+            StartAutProcessIDVar = ValueConverter.ToString(Host.Local.RunApplication("%UserProfile%\\Desktop\\RxDemoApp.exe", "", "", false));
             Delay.Milliseconds(0);
             
         }

@@ -42,7 +42,7 @@ mode="Desktop">
 				</binding>
 			</bindings>
 			<filename>
-				C:\Users\No Name\Desktop\RxDemoApp.exe
+				%UserProfile%\Desktop\RxDemoApp.exe
 			</filename>
 			<args>
 			</args>
