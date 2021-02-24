@@ -1,0 +1,103 @@
+﻿<repository
+id="c42ad276-b38b-4d7a-8ca4-ae6a2069b642"
+name="AzureDemoDesktopRepository">
+	<codegen
+	classname="AzureDemoDesktopRepository"
+	namespace="AzureDemoDesktop">
+	</codegen>
+	<rootfolder
+	capname="unknown"
+	id="71defd03-7d50-4768-907d-e2766ded8342"
+	isrooted="True"
+	name="Root"
+	searchtimeout="0ms"
+	usecache="True">
+		<appfolder
+		addcaps="form,control,nativewindow"
+		capname="form"
+		id="13ac802b-8aa6-48cc-85c8-6f49c2f676f9"
+		isrooted="True"
+		name="RxMainFrame"
+		refpath="/form[@controlname='RxMainFrame']"
+		searchtimeout="30000ms"
+		usecache="True">
+			<item
+			addcaps="tabpage,accessible"
+			capname="tabpage"
+			id="681270cb-48bd-4c41-a0a4-c20b241d64ac"
+			name="Introduction"
+			refimgid="b6ec4570-8907-495f-a9e5-c1aa9f5e996e"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@accessiblename='Introduction']"
+			searchtimeout="30000ms">
+				/form[@controlname='RxMainFrame']/?/?/tabpage[@accessiblename='Introduction']
+			</item>
+			<folder
+			addcaps="tabpage,control,nativewindow"
+			capname="tabpage"
+			id="03ad999c-2e00-4217-a524-aefdd284b260"
+			isrooted="True"
+			name="RxTabIntroduction"
+			refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabIntroduction']"
+			searchtimeout="30000ms"
+			usecache="False">
+				<item
+				addcaps="text,accessible"
+				capname="text"
+				id="2009b281-5ea5-42b7-9f3a-37745b4e468a"
+				name="EnterYourName"
+				refimgid="fd48dd26-6efd-431c-b8cf-7d84a978e921"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabIntroduction']/text[@controlname='txtUserName']/text[@accessiblename='Enter your name']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/?/?/text[@accessiblename='Enter your name']
+				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="61721661-e15c-48b7-9fe3-fbd7b0887d19"
+				name="BtnSubmitUserName"
+				refimgid="9c8cd10b-e2fb-459c-9608-fbb973621b4c"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabIntroduction']/button[@controlname='btnSubmitUserName']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/button[@controlname='btnSubmitUserName']
+				</item>
+				<item
+				addcaps="link,accessible"
+				capname="link"
+				id="da7c0744-e421-4a13-9aa8-193ed6adb5fa"
+				name="Reset"
+				refimgid="ce4e280e-d266-4668-ac39-2939d43a6a5c"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist/tabpage[@controlname='RxTabIntroduction']/link/text/link[@accessiblename='Reset']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/link[@controlname='RxLinkBtnReset']/?/?/link[@accessiblename='Reset']
+				</item>
+				<item
+				addcaps="text,control,nativewindow"
+				capname="text"
+				id="91b00044-43ee-4869-b949-34a5fbbb69d9"
+				name="LblWelcomeMessage"
+				refimgid="abd25256-448b-477b-abe8-3151e41cd7d4"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabIntroduction']/text[@controlname='lblWelcomeMessage']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']/text[@controlname='lblWelcomeMessage']
+				</item>
+				<basepath>
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabIntroduction']
+				</basepath>
+			</folder>
+			<basepath>
+				/form[@controlname='RxMainFrame']
+			</basepath>
+			<icon>
+				iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAADsQAAA7EAZUrDhsAAAB9SURBVDhPY0AGwcHBi4D4NxD/x4NB8r+DgoJa
+odogACj4BqQAyiUdwDQ/YBfa+oBN6CA+DNaADmAGAAlGIGbCh8Ea0AHIACD+B8RficFQbQgAFAQa
+TjwABuI3KBMCSDEgICBAeNSAUQOwGgACIEOAEt8JYaC6H0AaaAADAwC5s5VutWbaWgAAAABJRU5E
+rkJggg==
+			</icon>
+		</appfolder>
+		<basepath>
+		</basepath>
+	</rootfolder>
+	<variables>
+	</variables>
+</repository>

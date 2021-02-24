@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modulegroupdoc>
+  <testsuiteentryhierarchy>
+    <flatlistofchildren>
+      <modulegroups
+      name="AzureDemoDesktop"
+      id="b4154f8b-6946-4d5a-838e-c3fc04812c28"/>
+    </flatlistofchildren>
+    <childhierarchy>
+      <modulegroups
+      name="AzureDemoDesktop"
+      id="b4154f8b-6946-4d5a-838e-c3fc04812c28"/>
+    </childhierarchy>
+  </testsuiteentryhierarchy>
+</modulegroupdoc>

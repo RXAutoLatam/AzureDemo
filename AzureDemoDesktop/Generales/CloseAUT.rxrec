@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<recordtable
+embeddedrepository="False"
+id="b9c6996d-03b9-4c25-9409-6bc5175e8068"
+mode="Desktop">
+	<repeatcount>
+		1
+	</repeatcount>
+	<turbomode>
+		False
+	</turbomode>
+	<genreport>
+		True
+	</genreport>
+	<speedfactor>
+		1
+	</speedfactor>
+	<useDefaultItemLogging>
+		True
+	</useDefaultItemLogging>
+	<codegen
+	classname="CloseAUT"
+	namespace="AzureDemoDesktop.Generales">
+	</codegen>
+	<variables>
+		<var
+		id="d3763132-2eaf-41e8-864b-6c512195a517"
+		name="CloseAutProcessIDVar">
+			-1
+		</var>
+	</variables>
+	<recorditems>
+		<closeapprecorditem
+		enabled="True"
+		graceperiod="500ms"
+		method="CloseWindowByProcessID"
+		optional="False"
+		searchpropertyid="e8a33366-fea5-404d-91b1-996bd697beec">
+			<comment>
+			</comment>
+			<bindings>
+				<binding
+				target="ProcessID"
+				variable="CloseAutProcessIDVar">
+				</binding>
+			</bindings>
+		</closeapprecorditem>
+	</recorditems>
+	<repository
+	id="c42ad276-b38b-4d7a-8ca4-ae6a2069b642"
+	name="AzureDemoDesktopRepository"
+	relativepath="..\AzureDemoDesktopRepository.rxrep">
+		<codegen
+		classname="AzureDemoDesktopRepository"
+		namespace="AzureDemoDesktop">
+		</codegen>
+		<rootfolder
+		id="71defd03-7d50-4768-907d-e2766ded8342"
+		name="_rootdummy_">
+		</rootfolder>
+	</repository>
+	<usercodefile
+	lang="CSharp">
+		CloseAUT.UserCode.cs
+	</usercodefile>
+	<references>
+	</references>
+</recordtable>
