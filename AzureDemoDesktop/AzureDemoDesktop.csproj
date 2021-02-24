@@ -146,6 +146,18 @@
       <id>2203b831-69c8-4efc-90c9-d5158498859f</id>
       <BoundTo>2a1b0afb-efdc-4b35-a9f1-3c3c4afad08c</BoundTo>
     </Compile>
+    <Compile Include="Acciones\SelectTabDB.cs">
+      <BoundTo>c2280635-8741-46f1-8f01-b125c807e7df</BoundTo>
+      <DependentUpon>SelectTabDB.rxrec</DependentUpon>
+      <RecorderCode>true</RecorderCode>
+      <id>0a859131-4dea-4965-a5ca-82299faaeabb</id>
+    </Compile>
+    <Compile Include="Acciones\SelectTabDB.UserCode.cs">
+      <BoundTo>c2280635-8741-46f1-8f01-b125c807e7df</BoundTo>
+      <DependentUpon>SelectTabDB.rxrec</DependentUpon>
+      <UserCode>true</UserCode>
+      <id>b5d23a9a-b3f6-4e3a-a593-15d1126b99e8</id>
+    </Compile>
     <Compile Include="AssemblyInfo.cs">
       <id>e7c8d244-d8f6-463e-850e-44f10e3c64e5</id>
     </Compile>
@@ -194,6 +206,11 @@
       <id>2a1b0afb-efdc-4b35-a9f1-3c3c4afad08c</id>
       <recordtableid>cba4e9f3-e83d-4cc6-bb1a-473d563710b9</recordtableid>
     </None>
+    <None Include="Acciones\SelectTabDB.rxrec">
+      <BoundTo>4b7dfeec-2daf-4648-b335-c93c2c4ab970</BoundTo>
+      <id>c2280635-8741-46f1-8f01-b125c807e7df</id>
+      <recordtableid>cfd055d2-587e-4e9d-b20c-5777bc8c372e</recordtableid>
+    </None>
     <None Include="app.config">
       <id>3db7d770-4a29-4123-b83b-111c7a46f998</id>
     </None>
@@ -218,6 +235,13 @@
       <id>a5eacebf-0aa5-4049-b8e5-987efa338601</id>
       <recordtableid>fb051de7-b988-4f67-afa1-a83de24e0253</recordtableid>
     </None>
+    <Content Include="TestCase02.xlsx">
+      <Link>TestCase02.xlsx</Link>
+      <BoundTo>b98f1605-8a15-41cb-9deb-095f6daed0d8</BoundTo>
+      <DependentUpon>AzureDemoDesktop.rxtst</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <id>d0624a75-87a0-4305-9d54-9b6907e611fb</id>
+    </Content>
   </ItemGroup>
   <ItemGroup>
     <Content Include="AzureDemoDesktop.rxtmg">

@@ -27,6 +27,12 @@
 			type="Recording">
 			</testmodule>
 			<testmodule
+			id="5d34b02e-2310-4e1a-ad29-260a8ff66ee3"
+			name="SelectTabDB"
+			ref="cfd055d2-587e-4e9d-b20c-5777bc8c372e"
+			type="Recording">
+			</testmodule>
+			<testmodule
 			id="70aa6bfc-0d37-44f1-8f1d-beba75e29f49"
 			name="StartAUT"
 			ref="fb051de7-b988-4f67-afa1-a83de24e0253"
@@ -40,6 +46,11 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<smartfoldernode
+			datasource="TC2_DS"
+			id="74c98e5a-5084-4af3-ad11-e94b524945f2"
+			name="CargaDatos">
+			</smartfoldernode>
 			<testsuite
 			ReportTime="RelativeToTestSuiteStartTime"
 			TracingScreenshotMode="Foreground"
@@ -90,6 +101,38 @@
 			name="DemoDataBase"
 			ref="332bf891-ab08-446d-82d5-ddcfb46b5e88"
 			type="Recording">
+				<databinding>
+					<var
+					dataname="Nombre"
+					datasourceid="9a8170c2-4b34-4707-af77-4aab04b6f964"
+					variableid="51aa41a1-5cce-4bc8-99a1-4bcee7204f79"
+					variablename="Nombre">
+					</var>
+					<var
+					dataname="Apellido"
+					datasourceid="9a8170c2-4b34-4707-af77-4aab04b6f964"
+					variableid="0f62325d-1f04-4070-a850-9f88f355b89b"
+					variablename="Apellido">
+					</var>
+					<var
+					dataname="Departamento"
+					datasourceid="9a8170c2-4b34-4707-af77-4aab04b6f964"
+					variableid="756fc553-c8d0-4aa1-a9e2-b31605f415f7"
+					variablename="Departamento">
+					</var>
+					<var
+					dataname="Genero"
+					datasourceid="9a8170c2-4b34-4707-af77-4aab04b6f964"
+					variableid="330f9622-bf5f-44bd-bc86-376bd74a4b51"
+					variablename="Genero">
+					</var>
+					<var
+					dataname="Edad"
+					datasourceid="9a8170c2-4b34-4707-af77-4aab04b6f964"
+					variableid="260f8fdd-729d-4764-afe2-d6096cae4c23"
+					variablename="Edad">
+					</var>
+				</databinding>
 			</testmodule>
 			<testcase
 			id="d376d3fe-2499-4a3d-a40b-d9bff8ffca6e"
@@ -168,9 +211,17 @@
 							</testmodule>
 						</setup>
 						<testmodule
-						id="cbe5ee9d-c222-497d-a541-a17c8e5ce565"
-						name="DemoDataBase">
+						id="5d34b02e-2310-4e1a-ad29-260a8ff66ee3"
+						name="SelectTabDB">
 						</testmodule>
+						<smartfoldernode
+						id="74c98e5a-5084-4af3-ad11-e94b524945f2"
+						name="CargaDatos">
+							<testmodule
+							id="cbe5ee9d-c222-497d-a541-a17c8e5ce565"
+							name="DemoDataBase">
+							</testmodule>
+						</smartfoldernode>
 						<teardown
 						id="b93566d8-ed77-47d6-b702-de2c7588bd72"
 						name="teardown">
@@ -185,11 +236,43 @@
 		</childhierarchy>
 	</testsuiteentryhierarchy>
 	<datasources>
+		<DataSource
+		filename="TestCase02.xlsx"
+		id="9a8170c2-4b34-4707-af77-4aab04b6f964"
+		includefile="Checked"
+		lastknownrowcount="4"
+		name="TC2_DS"
+		type="Ranorex.Core.Data.ExcelDataConnector"
+		worksheetname="Hoja1"
+		worksheetrange="Auto-Range">
+			<lastknowncolumns>
+				<column>
+					Nombre
+				</column>
+				<column>
+					Apellido
+				</column>
+				<column>
+					Departamento
+				</column>
+				<column>
+					Genero
+				</column>
+				<column>
+					Edad
+				</column>
+			</lastknowncolumns>
+			<maskedcolumns>
+			</maskedcolumns>
+		</DataSource>
 	</datasources>
 	<testconfigurations
 	default="TestRun">
 		<testconfiguration
 		name="TestRun">
+			<testcontainer
+			id="74c98e5a-5084-4af3-ad11-e94b524945f2">
+			</testcontainer>
 			<testcontainer
 			id="78daa0e0-c802-4923-b532-569e186fede9">
 			</testcontainer>

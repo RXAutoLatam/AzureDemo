@@ -75,6 +75,18 @@ namespace AzureDemoDesktop
             set { _Departamento = value; }
         }
 
+        string _CantIngresos = "";
+
+        /// <summary>
+        /// Gets or sets the value of variable CantIngresos.
+        /// </summary>
+        [TestVariable("06563c94-8ffe-4813-933a-fcdbce83933c")]
+        public string CantIngresos
+        {
+            get { return _CantIngresos; }
+            set { _CantIngresos = value; }
+        }
+
 #endregion
 
         /// <summary>
@@ -400,7 +412,7 @@ namespace AzureDemoDesktop
                 _lastnameInfo = new RepoItemInfo(this, "LastName", "?/?/text[@accessiblename='Last name']", 30000, null, "47577672-ae1b-4b5c-8b28-21da45f79d0d");
                 _updowneditInfo = new RepoItemInfo(this, "UpDownEdit", "?/?/text[@controlname='upDownEdit']", 30000, null, "1c6829a8-3161-4784-9d8a-6cce65cba399");
                 _btnaddpersonInfo = new RepoItemInfo(this, "BtnAddPerson", "button[@controlname='btnAddPerson']", 30000, null, "0a3a0090-4d17-437c-993d-1b45ef997544");
-                _itemsagregadosInfo = new RepoItemInfo(this, "itemsAgregados", "list[@controlname='lstPersonList']/?/?/listitem[@accessiblename>'Fernando Figliola (male, 42)']", 30000, null, "d98525ab-c993-4fb2-ac87-0313a693fde8");
+                _itemsagregadosInfo = new RepoItemInfo(this, "itemsAgregados", "list[@controlname='lstPersonList']/?/?/listitem[$CantIngresos]", 30000, null, "d98525ab-c993-4fb2-ac87-0313a693fde8");
                 _listaagregadosInfo = new RepoItemInfo(this, "listaAgregados", "list[@controlname='lstPersonList']/list", 30000, null, "a1e2f875-bac5-4f89-91f3-c4dbea3916e3");
                 _lblnumberofpersonsnumberInfo = new RepoItemInfo(this, "LblNumberOfPersonsNumber", "text[@controlname='lblNumberOfPersonsNumber']", 30000, null, "2aa03e14-bd98-4d25-a919-d971ded89c08");
             }

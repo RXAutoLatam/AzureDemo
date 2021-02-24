@@ -168,9 +168,8 @@ name="AzureDemoDesktopRepository">
 				id="d98525ab-c993-4fb2-ac87-0313a693fde8"
 				name="itemsAgregados"
 				refimgid="626d0edc-9e46-4311-892e-562117ff10ba"
-				refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/list[@accessiblename='1']/listitem[@accessiblename='Fernando Figliola (male, 42) Sales']"
 				searchtimeout="30000ms">
-					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[@accessiblename&gt;'Fernando Figliola (male, 42)']
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/list[@controlname='lstPersonList']/?/?/listitem[$CantIngresos]
 				</item>
 				<item
 				addcaps="listitem,accessible"
@@ -295,6 +294,10 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		id="756fc553-c8d0-4aa1-a9e2-b31605f415f7"
 		name="Departamento">
 			Sales
+		</var>
+		<var
+		id="06563c94-8ffe-4813-933a-fcdbce83933c"
+		name="CantIngresos">
 		</var>
 	</variables>
 </repository>
