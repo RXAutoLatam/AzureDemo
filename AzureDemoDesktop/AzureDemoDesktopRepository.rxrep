@@ -190,6 +190,16 @@ name="AzureDemoDesktopRepository">
 				searchtimeout="30000ms">
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/text[@controlname='lblNumberOfPersonsNumber']
 				</item>
+				<item
+				addcaps="button,control,nativewindow"
+				capname="button"
+				id="6803c3ee-b2c7-45a2-ade2-dfebcc1b8526"
+				name="btn_DeletePerson"
+				refimgid="b46126a1-8459-4fe5-be8b-377b21e8eae5"
+				refpath="/form[@controlname='RxMainFrame']/tabpagelist[@controlname='RxTabcontrol']/tabpage[@controlname='RxTabStandard']/button[@controlname='btnDeletePerson']"
+				searchtimeout="30000ms">
+					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']/button[@controlname='btnDeletePerson']
+				</item>
 				<basepath>
 					/form[@controlname='RxMainFrame']/?/?/tabpage[@controlname='RxTabStandard']
 				</basepath>
@@ -298,6 +308,7 @@ OsYqSDz+zwAAaK/nDj2T/r4AAAAASUVORK5CYII=
 		<var
 		id="06563c94-8ffe-4813-933a-fcdbce83933c"
 		name="CantIngresos">
+			3
 		</var>
 	</variables>
 </repository>

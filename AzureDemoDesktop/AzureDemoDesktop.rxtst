@@ -134,6 +134,12 @@
 					</var>
 				</databinding>
 			</testmodule>
+			<testmodule
+			id="cd411290-1bb3-4e0f-ace2-0c5458304a09"
+			name="BorrarDatosIngresados"
+			ref="6644fe41-d0d1-4d90-9d6f-50037fdf2ae5"
+			type="UserCode">
+			</testmodule>
 			<testcase
 			id="d376d3fe-2499-4a3d-a40b-d9bff8ffca6e"
 			name="TestCase_02">
@@ -222,6 +228,10 @@
 							name="DemoDataBase">
 							</testmodule>
 						</smartfoldernode>
+						<testmodule
+						id="cd411290-1bb3-4e0f-ace2-0c5458304a09"
+						name="BorrarDatosIngresados">
+						</testmodule>
 						<teardown
 						id="b93566d8-ed77-47d6-b702-de2c7588bd72"
 						name="teardown">

@@ -122,6 +122,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Acciones\BorrarDatosIngresados.cs">
+      <id>f32bf665-a2b3-4c5f-ad72-b7188b2ffb6e</id>
+    </Compile>
     <Compile Include="Acciones\DemoDataBase.cs">
       <BoundTo>28cfab36-6a50-4fea-90e3-a2f29be33e6b</BoundTo>
       <DependentUpon>DemoDataBase.rxrec</DependentUpon>

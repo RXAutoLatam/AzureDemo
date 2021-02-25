@@ -75,7 +75,7 @@ namespace AzureDemoDesktop
             set { _Departamento = value; }
         }
 
-        string _CantIngresos = "";
+        string _CantIngresos = "3";
 
         /// <summary>
         /// Gets or sets the value of variable CantIngresos.
@@ -399,6 +399,7 @@ namespace AzureDemoDesktop
             RepoItemInfo _itemsagregadosInfo;
             RepoItemInfo _listaagregadosInfo;
             RepoItemInfo _lblnumberofpersonsnumberInfo;
+            RepoItemInfo _btn_deletepersonInfo;
 
             /// <summary>
             /// Creates a new RxTabStandard  folder.
@@ -415,6 +416,7 @@ namespace AzureDemoDesktop
                 _itemsagregadosInfo = new RepoItemInfo(this, "itemsAgregados", "list[@controlname='lstPersonList']/?/?/listitem[$CantIngresos]", 30000, null, "d98525ab-c993-4fb2-ac87-0313a693fde8");
                 _listaagregadosInfo = new RepoItemInfo(this, "listaAgregados", "list[@controlname='lstPersonList']/list", 30000, null, "a1e2f875-bac5-4f89-91f3-c4dbea3916e3");
                 _lblnumberofpersonsnumberInfo = new RepoItemInfo(this, "LblNumberOfPersonsNumber", "text[@controlname='lblNumberOfPersonsNumber']", 30000, null, "2aa03e14-bd98-4d25-a919-d971ded89c08");
+                _btn_deletepersonInfo = new RepoItemInfo(this, "btn_DeletePerson", "button[@controlname='btnDeletePerson']", 30000, null, "6803c3ee-b2c7-45a2-ade2-dfebcc1b8526");
             }
 
             /// <summary>
@@ -654,6 +656,30 @@ namespace AzureDemoDesktop
                 get
                 {
                     return _lblnumberofpersonsnumberInfo;
+                }
+            }
+
+            /// <summary>
+            /// The btn_DeletePerson item.
+            /// </summary>
+            [RepositoryItem("6803c3ee-b2c7-45a2-ade2-dfebcc1b8526")]
+            public virtual Ranorex.Button btn_DeletePerson
+            {
+                get
+                {
+                    return _btn_deletepersonInfo.CreateAdapter<Ranorex.Button>(true);
+                }
+            }
+
+            /// <summary>
+            /// The btn_DeletePerson item info.
+            /// </summary>
+            [RepositoryItemInfo("6803c3ee-b2c7-45a2-ade2-dfebcc1b8526")]
+            public virtual RepoItemInfo btn_DeletePersonInfo
+            {
+                get
+                {
+                    return _btn_deletepersonInfo;
                 }
             }
         }

@@ -47,9 +47,9 @@ namespace AzureDemoDesktop.Acciones
             foreach (Element e in cant)
             	i++;
             
-            return i.ToString();
-            
             Report.Info("INFO","Operación Finalizada");
+            
+            return i.ToString();
         }
 
     }
